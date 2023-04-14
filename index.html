@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+    <section id="form-container">
+        <div class=" form ">
+            <div class="frm">
+                <div class="content h-[90%] w-[90%] mt-auto mb-auto absolute inset-0 left-6">
+                    <h1 class="text-black font-bold text-[27px]">Choose New Password</h1>
+                    <p class="text-gray-400 text-xl mt-3">Almost done. Enter your new password and you are all set.</p>
+                    <h1 class="font-bold text-lg mt-5">Create a password</h1>
+                    <input id="newPassword" type="password" class="w-[98%] p-3 rounded-xl border border-gray-400 mt-3">  
+                    <h1 class="font-bold text-lg mt-5">Confirm new password</h1>
+                    <input id="confirmPassword" type="password" class="w-[98%] p-3 rounded-xl border border-gray-400 mt-3">  
+                    <div id="passwordMessage" class="text-red-500 font-bold text-sm"></div>
+                    <div class="flex flex-col lg:flex-row mt-5 w-[98%] ">
+                        <div class="w-full lg:w-1/2">
+                          <ul class="font-semibold space-y-2 text-green-700">
+                            <li class="lcase"><i class="fas fa-circle-check text-green-700 mr-2"></i>One lowercase character</li>
+                            <li class="upcase"><i class="fas fa-circle-check text-green-700 mr-2"></i>One uppercase character</li>
+                            <li class="number"><i class="fas fa-circle-check text-green-700 mr-2"></i>One number</li>
+                          </ul>
+                        </div>
+                        <div class="w-full lg:w-1/2 text-green-700">
+                          <ul class="font-semibold space-y-2">
+                            <li class="specialchar"><i class="fas fa-circle-check text-green-700 mr-2"></i>One special character</li>
+                            <li class="length"><i class="fas fa-circle-check text-green-700 mr-2"></i>8 minimum characters</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <button id="btn" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-3 px-4 rounded w-[100%] mt-5 text-lg">
+                        Reset Password
+                      </button>                
+            </div>
+        </div>
+    </section>
+
+    <script src="./index.js"></script>
+</body>
+</html>
